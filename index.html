@@ -43,6 +43,7 @@
   </script>
 
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="visuals.css">
 </head>
 <body>
 
@@ -89,13 +90,39 @@
         </div>
       </div>
       <p class="hero-bg-text" aria-hidden="true" lang="ja">野球</p>
+
+      <!-- Ballpark silhouette backdrop -->
+      <div class="park-silhouette" aria-hidden="true">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" focusable="false">
+          <defs>
+            <pattern id="npbLights" width="120" height="120" patternUnits="userSpaceOnUse">
+              <circle cx="18" cy="20" r="2.4" fill="currentColor"/>
+              <circle cx="96" cy="52" r="1.8" fill="currentColor"/>
+              <circle cx="46" cy="88" r="2.1" fill="currentColor"/>
+            </pattern>
+          </defs>
+          <g fill="none" stroke="currentColor" stroke-width="3">
+            <path d="M120 120 L120 44 M104 44 L136 44 M110 32 L130 32"/>
+            <path d="M380 120 L380 58 M366 58 L394 58 M372 46 L388 46"/>
+            <path d="M820 120 L820 58 M806 58 L834 58 M812 46 L828 46"/>
+            <path d="M1080 120 L1080 44 M1064 44 L1096 44 M1070 32 L1090 32"/>
+          </g>
+          <rect x="0" y="0" width="1200" height="120" fill="url(#npbLights)" opacity="0.5"/>
+          <path d="M0 120 L0 92 Q300 40 600 40 Q900 40 1200 92 L1200 120 Z" fill="currentColor"/>
+          <g stroke="currentColor" stroke-width="2.5" fill="none">
+            <path d="M250 46 L250 14 M250 16 L272 22 L250 28"/>
+            <path d="M700 42 L700 10 M700 12 L722 18 L700 24"/>
+            <path d="M950 44 L950 12 M950 14 L972 20 L950 26"/>
+          </g>
+        </svg>
+      </div>
     </section>
 
     <!-- ============ TICKER ============ -->
     <div class="ticker" aria-hidden="true">
       <div class="ticker-track">
-        <span>Yomiuri Giants — Tokyo Dome<span class="sep">///</span>Hanshin Tigers — 2026 CL champions<span class="sep">///</span>SoftBank Hawks — 2026 PL champions<span class="sep">///</span>Climax Series — Oct 10–19<span class="sep">///</span>Japan Series — Oct 24 / Nov 1<span class="sep">///</span>143 games per team<span class="sep">///</span>2 leagues — Central &amp; Pacific<span class="sep">///</span>サヨナラ — walk-off win<span class="sep">///</span>DH: Pacific League only<span class="sep">///</span>Lucky 7 — 7th inning cheer<span class="sep">///</span>Koshien — the cathedral<span class="sep">///</span></span>
-        <span>Yomiuri Giants — Tokyo Dome<span class="sep">///</span>Hanshin Tigers — 2026 CL champions<span class="sep">///</span>SoftBank Hawks — 2026 PL champions<span class="sep">///</span>Climax Series — Oct 10–19<span class="sep">///</span>Japan Series — Oct 24 / Nov 1<span class="sep">///</span>143 games per team<span class="sep">///</span>2 leagues — Central &amp; Pacific<span class="sep">///</span>サヨナラ — walk-off win<span class="sep">///</span>DH: Pacific League only<span class="sep">///</span>Lucky 7 — 7th inning cheer<span class="sep">///</span>Koshien — the cathedral<span class="sep">///</span></span>
+        <span>Yomiuri Giants — Tokyo Dome<span class="sep">///</span>Hanshin Tigers — 2026 CL champions<span class="sep">///</span>SoftBank Hawks — 2026 PL champions<span class="sep">///</span>Climax Series — Oct 10–20<span class="sep">///</span>Japan Series — Oct 24 / Nov 1<span class="sep">///</span>143 games per team<span class="sep">///</span>2 leagues — Central &amp; Pacific<span class="sep">///</span>サヨナラ — walk-off win<span class="sep">///</span>DH: Pacific League only<span class="sep">///</span>Lucky 7 — 7th inning cheer<span class="sep">///</span>Koshien — the cathedral<span class="sep">///</span></span>
+        <span>Yomiuri Giants — Tokyo Dome<span class="sep">///</span>Hanshin Tigers — 2026 CL champions<span class="sep">///</span>SoftBank Hawks — 2026 PL champions<span class="sep">///</span>Climax Series — Oct 10–20<span class="sep">///</span>Japan Series — Oct 24 / Nov 1<span class="sep">///</span>143 games per team<span class="sep">///</span>2 leagues — Central &amp; Pacific<span class="sep">///</span>サヨナラ — walk-off win<span class="sep">///</span>DH: Pacific League only<span class="sep">///</span>Lucky 7 — 7th inning cheer<span class="sep">///</span>Koshien — the cathedral<span class="sep">///</span></span>
       </div>
     </div>
 
@@ -111,7 +138,7 @@
           <div class="stat"><strong>12</strong><span>Teams</span></div>
           <div class="stat"><strong>02</strong><span>Leagues</span></div>
           <div class="stat"><strong>143</strong><span>Games / team</span></div>
-          <div class="stat"><strong>09</strong><span>Months — Mar–Nov</span></div>
+          <div class="stat"><strong>07</strong><span>Months — Mar to Nov</span></div>
         </div>
         <p class="lede reveal">The 2026 season runs from <strong>March 27 to November 1</strong> and ends with the <strong>Japan Series</strong> — and yes, regular-season games can end in a tie. One of NPB's charming quirks.</p>
       </div>
@@ -271,29 +298,29 @@
         </header>
         <div class="blog-list reveal">
 
-          <div class="blog-row" data-cat="Practical">
+          <div class="blog-row" data-cat="International">
             <span class="row-num">01</span>
+            <h3><a href="blog/japan-wbc-2026-exit.html">Japan's 2026 WBC Exit: What Went Wrong</a><span class="row-date">Oct 9, 2026 · 5 min read</span></h3>
+            <p class="row-excerpt">4–0 in Tokyo, then 8–5 to Venezuela in Miami — Japan's earliest World Baseball Classic exit ever.</p>
+            <span class="row-cat">International</span>
+          </div>
+
+          <div class="blog-row" data-cat="Rules">
+            <span class="row-num">02</span>
+            <h3><a href="blog/2026-climax-series-format.html">The 2026 Climax Series Format, Explained</a><span class="row-date">Oct 9, 2026 · 5 min read</span></h3>
+            <p class="row-excerpt">A two-game advantage and a possible seventh game — the new rule that applies in one league but not the other.</p>
+            <span class="row-cat">Rules</span>
+          </div>
+
+          <div class="blog-row" data-cat="Practical">
+            <span class="row-num">03</span>
             <h3><a href="blog/2026-postseason-guide.html">The 2026 NPB Postseason: Your Complete Guide</a><span class="row-date">Oct 9, 2026 · 6 min read</span></h3>
-            <p class="row-excerpt">Hanshin and SoftBank take the pennants. The Climax Series opens Oct 10 and the Japan Series opens at Koshien on Oct 24.</p>
+            <p class="row-excerpt">Pennants are decided. The Climax Series opens Oct 10 and the Japan Series opens at Koshien on Oct 24 — every date and ticket window.</p>
             <span class="row-cat">Practical</span>
           </div>
 
-          <div class="blog-row" data-cat="Teams">
-            <span class="row-num">02</span>
-            <h3><a href="blog/tigers-guide.html">Hanshin Tigers: Koshien, Faithful Fans and the 38-Year Wait</a><span class="row-date">Updated Oct 2026 · 6 min read</span></h3>
-            <p class="row-excerpt">Back-to-back pennants in 2025–26 — a first in club history. Japan's most passionate fanbase, explained.</p>
-            <span class="row-cat">Teams</span>
-          </div>
-
-          <div class="blog-row" data-cat="Teams">
-            <span class="row-num">03</span>
-            <h3><a href="blog/hawks-guide.html">SoftBank Hawks: The Dynasty That Keeps Winning</a><span class="row-date">Updated Oct 2026 · 6 min read</span></h3>
-            <p class="row-excerpt">Three straight pennants (2024–26) and 91 wins in 2026 — the machinery behind NPB's modern powerhouse.</p>
-            <span class="row-cat">Teams</span>
-          </div>
-
         </div>
-        <p class="center-note reveal">Want more? <a href="blog.html">Read all 20 articles →</a></p>
+        <p class="center-note reveal">Want more? <a href="blog.html">Read all 23 articles →</a></p>
       </div>
     </section>
 
