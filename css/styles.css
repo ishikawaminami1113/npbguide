@@ -866,6 +866,10 @@ body::after {
   .kicker { font-size: 0.7rem; }
 }
 
+/* ===== Hero backdrop layer ===== */
+.hero > .container { position: relative; z-index: 2; }
+.hero-bg-text { z-index: 0; }
+
 /* ===== Blog / articles ===== */
 .article-meta {
   display: flex; gap: 1.2rem; flex-wrap: wrap;
