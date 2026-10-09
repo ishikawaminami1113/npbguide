@@ -187,6 +187,90 @@
   }
 }
 
+/* ===== Cookie consent bar ===== */
+/* Square corners, hard offset shadow, paper on ink — no radius, no gradients. */
+.consent {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: var(--paper);
+  border-top: 3px solid var(--ink);
+  box-shadow: 0 -5px 0 rgba(23, 21, 15, 0.18);
+}
+.consent[hidden] { display: none; }
+
+.consent-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.05rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.consent-copy {
+  flex: 1 1 420px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0;
+}
+.consent-copy strong {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 0.35rem;
+}
+.consent-copy a {
+  color: var(--red);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.consent-actions { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+
+.consent-btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.7rem 1.25rem;
+  border: 2px solid var(--ink);
+  background: var(--red);
+  color: var(--paper);
+  box-shadow: 4px 4px 0 var(--ink);
+  transition: transform 0.14s ease, box-shadow 0.14s ease;
+}
+.consent-btn:hover { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--ink); }
+.consent-btn:active { transform: translate(4px, 4px); box-shadow: 0 0 0 var(--ink); }
+.consent-btn:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+
+.consent-btn--ghost { background: transparent; color: var(--ink); }
+.consent-btn--ghost:hover { background: var(--ink); color: var(--paper); }
+
+/* Footer "Cookie settings" trigger — matches .footer-nav anchors */
+.footer-nav .consent-trigger {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(243, 240, 231, 0.85);
+  padding: 0;
+  text-align: left;
+}
+.footer-nav .consent-trigger:hover { color: var(--red); }
+
+@media (max-width: 640px) {
+  .consent-inner { padding: 1rem 1.15rem; gap: 1rem; }
+  .consent-actions { width: 100%; }
+  .consent-btn { flex: 1 1 auto; text-align: center; }
+}
+
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
   .blog-row::after { display: none; }

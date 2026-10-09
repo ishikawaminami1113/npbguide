@@ -1,0 +1,18 @@
+# ads.txt — NPB Guide (https://npbtourguide.com/)
+# https://iabtechlab.com/ads-txt/
+#
+# NOTE FOR THE SITE OWNER
+# -----------------------
+# This file is intentionally empty of seller entries because this site is
+# NOT yet enrolled in Google AdSense (no publisher ID has been issued).
+#
+# As soon as AdSense approves the site, replace this file with the single
+# line Google gives you, in this exact form:
+#
+#   google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+#
+# (pub-0000000000000000 is your real publisher ID from AdSense > Account >
+#  Settings > Account information. Do NOT publish a made-up ID.)
+#
+# Leaving this file in place now is correct: AdSense requires ads.txt to
+# exist on the domain at the moment of the site review.

@@ -3,6 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Security -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com https://securepubads.g.doubleclick.net https://*.googleadservices.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://pagead2.googlesyndication.com https://securepubads.g.doubleclick.net https://*.googleadservices.com https://*.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://*.google-analytics.com; frame-src https://securepubads.g.doubleclick.net; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), interest-cohort=()">
+  <meta name="format-detection" content="telephone=no">
 
   <title>Japan Series: The Greatest Games in NPB History | NPB Guide</title>
   <meta name="description" content="From the 1950s classics to SoftBank's 2025 comeback at Koshien — the games that built the legend of the Japan Series.">
@@ -123,6 +128,7 @@
             <a href="../privacy.html">Privacy Policy</a>
             <a href="../contact.html">Contact</a>
             <a href="../sitemap.xml">Sitemap</a>
+            <button class="consent-trigger" type="button" data-open-consent>Cookies</button>
           </nav>
         </div>
       </div>
@@ -134,6 +140,22 @@
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+    <!-- Cookie consent -->
+  <div class="consent" id="consentBanner" role="dialog" aria-live="polite"
+       aria-label="Cookie preferences" hidden>
+    <div class="consent-inner">
+      <p class="consent-copy"><strong>Cookies</strong> This site runs no trackers
+        of its own. Advertising cookies (Google AdSense) are written to your
+        browser only if you agree to them.
+        <a href="../privacy.html">Privacy policy</a></p>
+      <div class="consent-actions">
+        <button class="consent-btn" id="consentAccept" type="button">Accept all</button>
+        <button class="consent-btn consent-btn--ghost" id="consentEssential" type="button">Essential only</button>
+      </div>
+    </div>
+  </div>
+
+<script src="../js/main.js"></script>
+  <script src="../js/consent.js"></script>
 </body>
 </html>
