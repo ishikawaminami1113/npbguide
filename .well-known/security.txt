@@ -1,5 +1,5 @@
 Contact: mailto:hello@npbtourguide.com
-Expires: 2026-10-09T00:00:00.000Z
+Expires: 2027-10-09T00:00:00.000Z
 Preferred-Languages: en, ja
 Policy: https://npbtourguide.com/privacy.html
 Canonical: https://npbtourguide.com/.well-known/security.txt
