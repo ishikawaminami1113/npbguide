@@ -749,6 +749,27 @@ body::after {
   *, *::before, *::after { transition-duration: 0.01ms !important; }
 }
 
+/* ===== Design Brush-up v3 ===== */
+.section { padding: 6rem 0; }
+.section-head { gap: 1.2rem; padding-bottom: 1.2rem; margin-bottom: 3rem; }
+.sec-index {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  align-self: center;
+}
+.sec-title { font-size: clamp(2.1rem, 5.5vw, 3.5rem); }
+.hero-lead { font-size: 1.12rem; line-height: 1.75; max-width: 34rem; }
+.article-body { max-width: 720px; }
+.article-body .lede { font-size: 1.3rem; line-height: 1.6; }
+.article-body p { font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem; }
+.article-body h2 { font-size: clamp(1.5rem, 3.2vw, 2rem); margin: 3rem 0 1.2rem; }
+.blog-row { padding: 1.5rem 0.6rem; }
+.blog-row h3 { font-size: clamp(1.2rem, 2.6vw, 1.65rem); }
+.btn { padding: 1.05rem 2.2rem; }
+
 /* ===== Responsive ===== */
 @media (max-width: 1000px) {
   .hero-grid { grid-template-columns: 1fr; }
