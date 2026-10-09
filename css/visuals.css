@@ -187,6 +187,16 @@
   }
 }
 
+/* Inline <code> — Space Mono on paper-2 with a hard ink border, square corners */
+.article-body code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background: var(--paper-2);
+  border: 1px solid var(--ink);
+  padding: 0.1em 0.45em;
+  white-space: nowrap;
+}
+
 /* ===== Cookie consent bar ===== */
 /* Square corners, hard offset shadow, paper on ink — no radius, no gradients. */
 .consent {
