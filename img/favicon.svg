@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#f3f0e7"/>
+  <rect x="26" y="26" width="460" height="460" fill="none" stroke="#17150f" stroke-width="26"/>
+  <text x="256" y="372" font-family="Impact, 'Arial Black', sans-serif" font-size="330"
+        fill="#17150f" text-anchor="middle">N</text>
+  <rect x="344" y="368" width="86" height="72" fill="#e8382a"/>
+</svg>
