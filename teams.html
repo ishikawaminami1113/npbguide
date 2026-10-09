@@ -19,6 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="visuals.css">
 </head>
 <body>
 
@@ -63,6 +64,20 @@
         </div>
       </div>
       <p class="hero-bg-text" aria-hidden="true" lang="ja">球団</p>
+
+      <!-- Ballpark silhouette backdrop -->
+      <div class="park-silhouette" aria-hidden="true">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" focusable="false">
+          <g fill="none" stroke="currentColor" stroke-width="3">
+            <path d="M120 120 L120 44 M104 44 L136 44 M110 32 L130 32"/>
+            <path d="M1080 120 L1080 44 M1064 44 L1096 44 M1070 32 L1090 32"/>
+          </g>
+          <path d="M0 120 L0 92 Q300 40 600 40 Q900 40 1200 92 L1200 120 Z" fill="currentColor"/>
+          <g stroke="currentColor" stroke-width="2.5" fill="none">
+            <path d="M700 42 L700 10 M700 12 L722 18 L700 24"/>
+          </g>
+        </svg>
+      </div>
     </section>
 
     <!-- ============ CENTRAL LEAGUE ============ -->
@@ -106,6 +121,7 @@
           </div>
           <p class="team-meta"><span>Nagoya</span><span>Home — Vantelin Dome Nagoya</span><span>Est. 1936</span></p>
           <p class="desc">The pride of the Chubu region, known for strong pitching and a famously loyal local following in Japan's manufacturing heartland.</p>
+
         </article>
 
         <article class="team-block reveal" id="yakult">
@@ -179,7 +195,7 @@
             <h4>Saitama Seibu Lions</h4>
             <span class="team-colorchip" style="--c:#0f2f8f" title="Team color: blue"></span>
           </div>
-          <p class="team-meta"><span>Saitama</span><span>Home — Belluna Dome</span><span>Est. 1950</span></p>
+          <p class="team-meta"><span>Saitama</span><span>Home — Belluna Dome</span><span>Est. 1949</span></p>
           <p class="desc">The "blue machine" — a historic powerhouse of the 1980s and 90s whose golden era still defines their identity today.</p>
         </article>
 
@@ -200,7 +216,7 @@
             <span class="team-colorchip" style="--c:#0a1e46" title="Team color: navy"></span>
           </div>
           <p class="team-meta"><span>Chiba</span><span>Home — Zozo Marine Stadium</span><span>Est. 1950</span></p>
-          <p class="desc">Tokyo Bay's cheerful club, famous for colorful mascots, dance routines and one of the most fun game-day atmospheres in Japan.</p>
+          <p class="desc">The cheerful club on Tokyo Bay, famous for colorful mascots, dance routines and one of the liveliest game-day atmospheres in Japan.</p>
         </article>
 
         <article class="team-block reveal" id="eagles">
@@ -246,7 +262,7 @@
     <!-- ============ PULL QUOTE ============ -->
     <div class="pull-band reveal">
       <div class="container">
-        <p><span class="mark">Did you know?</span> The Pacific League swings the bat for the pitcher — the Central League doesn't. In June, everyone plays everyone.</p>
+        <p><span class="mark">Did you know?</span> The Pacific League swings the bat for the pitcher — the Central League doesn't. From late May to mid-June, every team plays 18 interleague games — three against each of the six clubs in the other league.</p>
       </div>
     </div>
   </main>
