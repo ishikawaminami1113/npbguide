@@ -1,0 +1,193 @@
+/* ============================================================
+   NPB GUIDE — Visual Enhancement v5
+   Inline SVG icons + decorative elements (no external images)
+   All artwork is original, hand-authored SVG.
+   ============================================================ */
+
+/* ===== Icon system (reusable, inline SVG) ===== */
+.icon {
+  width: 1.1em;
+  height: 1.1em;
+  flex: 0 0 auto;
+  display: inline-block;
+  vertical-align: -0.15em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Section head with icon */
+.sec-head-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.sec-head-icon .icon { color: var(--red); width: 1.4em; height: 1.4em; }
+
+/* Team color bar accent */
+.team-block::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--ink);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.team-block { position: relative; }
+.team-block:hover::before { opacity: 1; }
+
+/* ===== Visual: ballpark silhouette (hero backdrop) ===== */
+.park-silhouette {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 110px;
+  width: 100%;
+  color: rgba(23, 21, 15, 0.06);
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+.park-silhouette svg { width: 100%; height: 100%; display: block; }
+
+/* ===== Visual: home-plate rule motif ===== */
+.plate-motif {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background: var(--red);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 100%, 0% 100%, 0% 25%);
+  opacity: 0.9;
+  flex: 0 0 auto;
+}
+
+/* ===== Visual: baseball seam divider ===== */
+.seam-divider {
+  height: 24px;
+  width: 100%;
+  margin: 2.5rem 0;
+  color: var(--red);
+  opacity: 0.5;
+}
+.seam-divider svg { width: 100%; height: 100%; display: block; }
+
+/* ===== Visual: stat icons ===== */
+.stat { position: relative; }
+.stat .icon {
+  width: 1.5em;
+  height: 1.5em;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+
+/* ===== Visual: article card hover arrow ===== */
+.blog-row h3 { position: relative; padding-right: 2rem; }
+.blog-row::after {
+  content: "→";
+  position: absolute;
+  right: 0.8rem;
+  top: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  color: var(--red);
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.blog-row { position: relative; }
+.blog-row:hover::after { opacity: 1; transform: translateX(0); }
+.blog-row:hover::after { color: var(--paper); }
+
+/* ===== Visual: list-row category icons ===== */
+.list-row .row-icon {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--red);
+  line-height: 1;
+}
+
+/* ===== Visual: pull-band accent ===== */
+.pull-band { position: relative; overflow: hidden; }
+.pull-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(45deg,
+      transparent, transparent 12px,
+      rgba(23, 21, 15, 0.025) 12px, rgba(23, 21, 15, 0.025) 24px);
+  pointer-events: none;
+}
+
+/* ===== Visual: footer ball seam ===== */
+.footer-seam {
+  height: 40px;
+  width: 100%;
+  color: rgba(243, 240, 231, 0.12);
+  margin-bottom: 2rem;
+}
+.footer-seam svg { width: 100%; height: 100%; display: block; }
+
+/* ===== Visual: hero stamp enhancement ===== */
+.stamp {
+  box-shadow: 3px 3px 0 rgba(232, 56, 42, 0.15);
+}
+.stamp::after {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  border: 1px solid var(--red);
+  opacity: 0.2;
+  pointer-events: none;
+}
+.stamp { position: relative; }
+
+/* ===== Visual: ticker separators ===== */
+.ticker .sep {
+  color: var(--red);
+  padding: 0 0.9rem;
+  position: relative;
+}
+
+/* ===== Visual: card shadow on key blocks ===== */
+.step {
+  transition: background 0.2s ease, padding 0.2s ease;
+}
+.step:hover {
+  background: rgba(232, 56, 42, 0.04);
+  padding-left: 1.2rem;
+}
+.why-col {
+  transition: background 0.2s ease, padding 0.2s ease;
+}
+.why-col:hover {
+  background: rgba(232, 56, 42, 0.04);
+}
+
+/* ===== Visual: tag chip enhanced ===== */
+.tag-chip {
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+.tag-chip:hover { transform: translateY(-2px); }
+
+/* ===== Visual: nav active underline thicker ===== */
+.nav-menu a::after { height: 3px; }
+
+/* ===== Reduced motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  .step:hover, .why-col:hover, .blog-row::after, .tag-chip:hover {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
+  .blog-row::after { display: none; }
+}
