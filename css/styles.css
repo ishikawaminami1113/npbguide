@@ -49,6 +49,124 @@ body::after {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/></filter><rect width='140' height='140' filter='url(%23n)'/></svg>");
 }
 
+/* ============================================================
+   Photo-forward design — 2026 refresh
+   ============================================================ */
+
+/* Hero with stadium photograph */
+.hero {
+  background-image: url("../img/hero-stadium.jpg");
+  background-size: cover;
+  background-position: center 20%;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(23,21,15,0.78) 0%, rgba(23,21,15,0.45) 45%, rgba(23,21,15,0.15) 100%),
+    linear-gradient(0deg, rgba(23,21,15,0.65) 0%, rgba(23,21,15,0) 45%);
+}
+.hero .hero-title .big,
+.hero .hero-title .sub { color: var(--paper); text-shadow: 0 2px 24px rgba(0,0,0,0.45); }
+.hero .hero-title .outline-txt { -webkit-text-stroke: 2px rgba(243,240,231,0.55); }
+.hero .hero-lead { color: rgba(243,240,231,0.9); }
+.hero .hero-lead strong { color: #fff; }
+.hero .vertical-jp { color: var(--red); }
+.hero .stamp { border-color: var(--red); color: var(--red); }
+
+/* Photo feature band */
+.photo-band {
+  position: relative;
+  min-height: 62svh;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.photo-band::before {
+  content: "";
+  position: absolute; inset: 0;
+  background: linear-gradient(0deg, rgba(23,21,15,0.82) 0%, rgba(23,21,15,0.25) 55%, rgba(23,21,15,0.1) 100%);
+}
+.photo-band .container { position: relative; z-index: 1; padding-block: 5rem; }
+.photo-band .kicker { color: var(--paper); }
+.photo-band .kicker::before { background: var(--red); }
+.photo-band-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  color: var(--paper);
+  line-height: 0.95;
+  font-size: clamp(2.4rem, 6vw, 4.6rem);
+  max-width: 16ch;
+  text-shadow: 0 2px 30px rgba(0,0,0,0.5);
+}
+.photo-band-text {
+  color: rgba(243,240,231,0.85);
+  max-width: 46rem;
+  margin-top: 1.4rem;
+  font-size: 1.05rem;
+}
+
+/* Card with photograph */
+.card-photo {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--ink);
+  background: var(--ink);
+}
+.card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.card-photo:hover img { transform: scale(1.05); }
+
+/* Team rows get a photograph chip */
+.team-row .team-photo {
+  width: 130px; height: 86px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border: 2px solid var(--ink);
+  display: none;
+}
+.team-row .team-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.team-row:hover .team-photo img { transform: scale(1.07); }
+
+@media (min-width: 900px) {
+  .team-row .team-photo { display: block; }
+}
+
+/* Stat blocks: larger, airier */
+.stat strong { font-size: clamp(2.6rem, 5vw, 3.6rem); }
+.stat span { font-size: 0.82rem; }
+
+/* Article cards with image */
+.blog-row .row-thumb {
+  flex: 0 0 200px;
+  height: 130px;
+  overflow: hidden;
+  border: 2px solid var(--ink);
+  display: none;
+}
+.blog-row .row-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.blog-row:hover .row-thumb img { transform: scale(1.06); }
+@media (min-width: 900px) {
+  .blog-row .row-thumb { display: block; }
+}
+
+/* Section header: refine spacing */
+.section-head { margin-bottom: 3.6rem; }
+.sec-title { font-size: clamp(2rem, 4.5vw, 3.2rem); }
+
+/* Smooth reveal */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal { animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
+}
+
 .container { width: min(1180px, 92%); margin-inline: auto; }
 
 .visually-hidden {
