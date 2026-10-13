@@ -6,7 +6,7 @@
 <atom:link href="https://npbtourguide.com/feed.xml" rel="self" type="application/rss+xml"/>
 <description>English-language guides to Nippon Professional Baseball — teams, game day, culture and history.</description>
 <language>en</language>
-<lastBuildDate>Tue, 13 Oct 2026 05:59:42 GMT</lastBuildDate>
+<lastBuildDate>Tue, 13 Oct 2026 06:14:33 GMT</lastBuildDate>
 <item>
 <title>Japan&#x27;s 2026 WBC Exit: What Went Wrong</title>
 <link>https://npbtourguide.com/blog/japan-wbc-2026-exit.html</link>
@@ -142,6 +142,22 @@
 <pubDate>2026-10-01T00:00:00Z</pubDate>
 <category>Culture</category>
 <description>From Major to Ace of Diamond, One Outs to Cross Game — what each one teaches you about NPB.</description>
+</item>
+<item>
+<title>The Sawamura Award: Japan&#x27;s Cy Young, Explained</title>
+<link>https://npbtourguide.com/blog/sawamura-award.html</link>
+<guid isPermaLink="true">https://npbtourguide.com/blog/sawamura-award.html</guid>
+<pubDate>2026-10-01T00:00:00Z</pubDate>
+<category>History</category>
+<description>Older than the Cy Young, stricter than any pitching honor — and often simply unclaimed.</description>
+</item>
+<item>
+<title>A Short History of Japanese Baseball</title>
+<link>https://npbtourguide.com/blog/history-japanese-baseball.html</link>
+<guid isPermaLink="true">https://npbtourguide.com/blog/history-japanese-baseball.html</guid>
+<pubDate>2026-10-01T00:00:00Z</pubDate>
+<category>History</category>
+<description>From Horace Wilson&#x27;s classroom in 1872 to Shohei Ohtani — how baseball became Japan&#x27;s game.</description>
 </item>
 <item>
 <title>Women&#x27;s Baseball in Japan: The Rising Story</title>
