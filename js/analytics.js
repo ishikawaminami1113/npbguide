@@ -9,13 +9,12 @@
  *     never loads analytics at all.
  *   - The event fires from js/consent.js; this file only listens.
  *
- * To activate: set GA_ID to the property's measurement ID (G-XXXXXXXXXX).
- * While GA_ID is the placeholder below, the file is a complete no-op.
+ * The measurement ID is configured below; without consent this file does nothing.
  */
 (function () {
   "use strict";
 
-  var GA_ID = "G-PENDING"; /* <- replace with measurement ID */
+  var GA_ID = "G-0H3HZK4Q0V"; /* measurement ID (GA4 property "NPB Guide") */
 
   var started = false;
 
