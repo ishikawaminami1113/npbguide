@@ -6,7 +6,7 @@
      crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Security -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com https://securepubads.g.doubleclick.net https://*.googleadservices.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://pagead2.googlesyndication.com https://securepubads.g.doubleclick.net https://*.googleadservices.com https://*.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://*.google-analytics.com https://static.cloudflareinsights.com; frame-src https://securepubads.g.doubleclick.net; object-src 'none'; base-uri 'self'; form-action 'self'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://pagead2.googlesyndication.com https://securepubads.g.doubleclick.net https://*.googleadservices.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://*.google-analytics.com https://pagead2.googlesyndication.com https://securepubads.g.doubleclick.net https://*.googleadservices.com https://*.gstatic.com; connect-src 'self' https://www.googletagmanager.com https://*.analytics.google.com https://pagead2.googlesyndication.com https://*.google-analytics.com https://static.cloudflareinsights.com; frame-src https://securepubads.g.doubleclick.net; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), interest-cohort=()">
   <meta name="format-detection" content="telephone=no">
@@ -102,20 +102,21 @@
       <div class="container">
         <div class="article-body" style="max-width: none;">
           <h2 class="reveal">1. Information we collect</h2>
-          <p class="reveal">NPB Guide is a static, read-first website. We do not require accounts, and we do not collect personal data from visitors. Our contact and newsletter forms are demonstrations: the text you enter is processed only in your browser and is <strong>not sent to or stored on any server</strong>.</p>
+          <p class="reveal">NPB Guide is a static, read-first website. We do not require accounts. The newsletter sign-up on the home page is a demonstration — nothing you type there leaves your browser. The <a href="contact.html">contact form</a> is real: your message is delivered to our inbox through the Formsubmit service (formsubmit.co) and is not stored on this website.</p>
+          <p class="reveal">If you choose <strong>Accept all</strong>, Google Analytics measures visit statistics for us (pages viewed, country, referrer, device). It is loaded only after that choice and never before. Choosing <strong>Essential only</strong> means no analytics runs at all.</p>
 
           <h2 class="reveal">2. Advertising</h2>
-          <p class="reveal">This site is currently ad-free. We may join the <strong>Google AdSense</strong> program in the future. If we do, Google uses cookies — including the DART cookie — to serve ads based on your prior visits to this and other websites. That is done by Google, not by us, and is how ad revenue would keep the site free to read.</p>
+          <p class="reveal">This site uses the <strong>Google AdSense</strong> program to display advertising (ad serving begins once our AdSense application is approved). Google uses cookies — including the DART cookie — to serve ads based on your prior visits to this and other websites. That is done by Google, not by us, and is how ad revenue keeps the site free to read.</p>
           <p class="reveal">To make sure that never happens without your say-so, every page carries a cookie bar at the bottom. Choosing <strong>Essential only</strong> keeps advertising cookies switched off; choosing <strong>Accept all</strong> allows them. Your choice is stored in your own browser under the key <code>npb_consent</code> — it is never transmitted to us or to anyone else — and you can change it at any time with the <strong>Cookies</strong> button in the footer. Until you press <strong>Accept all</strong>, no advertising cookie is written.</p>
           <ul class="reveal">
             <li>You can opt out of personalized (interest-based) ads at <a href="https://adssettings.google.com" target="_blank" rel="noopener">adssettings.google.com</a>.</li>
             <li>You can manage cookies in your browser settings; disabling cookies may reduce ad relevance.</li>
-            <li>We do not run our own analytics tracker on this site.</li>
+            <li>We measure visits with Google Analytics, loaded only after you choose <strong>Accept all</strong>.</li>
           </ul>
           <blockquote class="reveal">No data sold. No data harvested. Just ads.</blockquote>
 
           <h2 class="reveal">3. Third parties</h2>
-          <p class="reveal">Our pages load web fonts from Google Fonts and may embed content from YouTube or official league sources. Those third parties operate under their own privacy policies, which we encourage you to read.</p>
+          <p class="reveal">Our pages load web fonts from Google Fonts and may embed content from YouTube or official league sources. With your consent, Google Analytics records anonymous visit statistics. Those third parties operate under their own privacy policies, which we encourage you to read.</p>
 
           <h2 class="reveal">4. Children's privacy</h2>
           <p class="reveal">NPB Guide is a general-interest sports publication. We do not knowingly collect personal data from children under 13.</p>
@@ -170,9 +171,7 @@
   <div class="consent" id="consentBanner" role="dialog" aria-live="polite"
        aria-label="Cookie preferences" hidden>
     <div class="consent-inner">
-      <p class="consent-copy"><strong>Cookies</strong> This site runs no trackers
-        of its own. Advertising cookies (Google AdSense) are written to your
-        browser only if you agree to them.
+      <p class="consent-copy"><strong>Cookies</strong> With your agreement, this site uses Google Analytics to count visits and Google AdSense to show ads. Decline and neither runs &mdash; your choice is stored in your browser only.
         <a href="privacy.html">Privacy policy</a></p>
       <div class="consent-actions">
         <button class="consent-btn" id="consentAccept" type="button">Accept all</button>
@@ -183,5 +182,6 @@
 
 <script src="js/main.js"></script>
   <script src="js/consent.js"></script>
+  <script src="js/analytics.js"></script>
 </body>
 </html>
