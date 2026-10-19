@@ -281,6 +281,19 @@
   .consent-btn { flex: 1 1 auto; text-align: center; }
 }
 
+/* ===== Visual: stat icons (SVG) --- */
+.stat-icon-svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
   .blog-row::after { display: none; }
