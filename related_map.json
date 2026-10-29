@@ -1,0 +1,172 @@
+{
+  "blog/fighters-guide.html": [
+    "blog/tigers-guide.html",
+    "blog/giants-guide.html",
+    "blog/2026-postseason-guide.html"
+  ],
+  "blog/tigers-guide.html": [
+    "blog/fighters-guide.html",
+    "blog/giants-guide.html",
+    "blog/koshien-guide.html"
+  ],
+  "blog/giants-guide.html": [
+    "blog/tigers-guide.html",
+    "blog/fighters-guide.html",
+    "blog/2026-climax-series-format.html"
+  ],
+  "blog/dena-guide.html": [
+    "blog/fighters-guide.html",
+    "blog/2026-postseason-guide.html"
+  ],
+  "blog/hawks-guide.html": [
+    "blog/seibu-guide.html",
+    "blog/2026-postseason-guide.html",
+    "blog/2026-season-preview.html"
+  ],
+  "blog/seibu-guide.html": [
+    "blog/hawks-guide.html",
+    "blog/lotte-guide.html",
+    "blog/2026-postseason-guide.html"
+  ],
+  "blog/lotte-guide.html": [
+    "blog/seibu-guide.html",
+    "blog/eagles-guide.html",
+    "blog/2026-postseason-guide.html"
+  ],
+  "blog/eagles-guide.html": [
+    "blog/lotte-guide.html",
+    "blog/seibu-guide.html",
+    "blog/2026-postseason-guide.html"
+  ],
+  "blog/orix-guide.html": [
+    "blog/orix-guide.html",
+    "blog/tigers-guide.html",
+    "blog/2026-postseason-guide.html"
+  ],
+  "blog/carp-guide.html": [
+    "blog/carp-guide.html",
+    "blog/2026-postseason-guide.html"
+  ],
+  "blog/chunichi-guide.html": [
+    "blog/chunichi-guide.html",
+    "blog/2026-postseason-guide.html"
+  ],
+  "blog/yakult-guide.html": [
+    "blog/yakult-guide.html",
+    "blog/2026-postseason-guide.html"
+  ],
+  "blog/2026-postseason-guide.html": [
+    "blog/japan-series-2026.html",
+    "blog/2026-climax-series-format.html",
+    "blog/fighters-guide.html"
+  ],
+  "blog/japan-series-2026.html": [
+    "blog/2026-postseason-guide.html",
+    "blog/dena-guide.html",
+    "blog/hawks-guide.html"
+  ],
+  "blog/japan-series-history.html": [
+    "blog/2026-postseason-guide.html",
+    "blog/japan-series-2026.html",
+    "blog/history-japanese-baseball.html"
+  ],
+  "blog/watch-overseas.html": [
+    "blog/tickets-guide.html",
+    "blog/2026-postseason-guide.html"
+  ],
+  "blog/tickets-guide.html": [
+    "blog/watch-overseas.html",
+    "blog/japan-series-2026.html"
+  ],
+  "blog/stadium-food.html": [
+    "blog/ouendan-guide.html",
+    "blog/2026-season-preview.html"
+  ],
+  "blog/ouendan-guide.html": [
+    "blog/stadium-food.html",
+    "blog/2026-season-preview.html"
+  ],
+  "blog/koshien-guide.html": [
+    "blog/tigers-guide.html",
+    "blog/history-japanese-baseball.html"
+  ],
+  "blog/history-japanese-baseball.html": [
+    "blog/koshien-guide.html",
+    "blog/japan-series-history.html",
+    "blog/what-is-npb.html"
+  ],
+  "blog/what-is-npb.html": [
+    "blog/history-japanese-baseball.html",
+    "blog/npb-vs-mlb.html",
+    "blog/npb-to-mlb.html"
+  ],
+  "blog/npb-vs-mlb.html": [
+    "blog/npb-to-mlb.html",
+    "blog/what-is-npb.html",
+    "blog/npb-records.html"
+  ],
+  "blog/npb-to-mlb.html": [
+    "blog/npb-vs-mlb.html",
+    "blog/npb-records.html",
+    "blog/sawamura-award.html"
+  ],
+  "blog/npb-records.html": [
+    "blog/sawamura-award.html",
+    "blog/history-japanese-baseball.html",
+    "blog/npb-vs-mlb.html"
+  ],
+  "blog/sawamura-award.html": [
+    "blog/npb-records.html",
+    "blog/dh-debate.html",
+    "blog/history-japanese-baseball.html"
+  ],
+  "blog/dh-debate.html": [
+    "blog/sawamura-award.html",
+    "blog/npb-vs-mlb.html",
+    "blog/2026-season-preview.html"
+  ],
+  "blog/climax-series-explained.html": [
+    "blog/2026-climax-series-format.html",
+    "blog/2026-postseason-guide.html",
+    "blog/japan-series-2026.html"
+  ],
+  "blog/2026-climax-series-format.html": [
+    "blog/climax-series-explained.html",
+    "blog/2026-postseason-guide.html",
+    "blog/japan-series-2026.html"
+  ],
+  "blog/2026-season-preview.html": [
+    "blog/hawks-guide.html",
+    "blog/tigers-guide.html",
+    "blog/japan-series-2026.html"
+  ],
+  "blog/baseball-anime.html": [
+    "blog/what-is-npb.html",
+    "blog/koshien-guide.html",
+    "blog/women-baseball-japan.html"
+  ],
+  "blog/baseball-terms.html": [
+    "blog/what-is-npb.html",
+    "blog/baseball-terms.html",
+    "blog/koshien-guide.html"
+  ],
+  "blog/japan-wbc-2026-exit.html": [
+    "blog/wbc-npb.html",
+    "blog/women-baseball-japan.html",
+    "blog/history-japanese-baseball.html"
+  ],
+  "blog/wbc-npb.html": [
+    "blog/japan-wbc-2026-exit.html",
+    "blog/women-baseball-japan.html",
+    "blog/what-is-npb.html"
+  ],
+  "blog/women-baseball-japan.html": [
+    "blog/wbc-npb.html",
+    "blog/japan-wbc-2026-exit.html",
+    "blog/history-japanese-baseball.html"
+  ],
+  "blog/mascots-guide.html": [
+    "blog/stadium-food.html",
+    "blog/ouendan-guide.html"
+  ]
+}
